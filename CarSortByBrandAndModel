@@ -1,0 +1,22 @@
+package com.company;
+
+import java.util.Comparator;
+
+public class CarSortByBrandAndModel implements Comparable<Car> {
+
+
+    public int compare(Car c1, Car c2) {
+        if(c1.Brand!=c2.Brand)
+            return c1.Brand.compareTo(c2.Brand);
+        else
+        {
+            return c1.Model.compareTo(c2.Model);
+        }
+    }
+
+    @Override
+    public int compareTo(Car o) {
+        return 0;
+    }
+
+}
