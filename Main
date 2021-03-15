@@ -1,0 +1,46 @@
+package com.company;
+import javax.xml.crypto.Data;
+import java.sql.Time;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Scanner;
+import java.time.LocalTime;
+public class Main {
+
+    public static void main(String[] args) {
+        LocalDateTime date1 = LocalDateTime.of(2021, 12, 7, 12, 51, 3);
+        ArrayList<Car> cars = new ArrayList<>();
+        cars.add(new Car("123","Audi","A5","White",5));
+        cars.add(new Car("123","Audi","A5","White",5));
+        Collections.sort(cars);
+        /*Collections.sort(cars, new CarSortByBrandAndModel());
+        for (int index = 0; index < cars.size(); index++)
+        {
+            System.out.println(cars.get(index));
+        }
+        */
+
+        /*Collections.sort(cars,CarSortByBrandCreation());
+        for (int index = 0; index < cars.size(); index++)
+        {
+            System.out.println(cars.get(index));
+        }
+        */
+
+        /*Collections.sort(cars,CarSortByColor());
+        for (int index = 0; index < cars.size(); index++)
+        {
+            System.out.println(cars.get(index));
+        }
+        */
+
+        /*Collections.sort(cars,CarSortBySeats());
+        for (int index = 0; index < cars.size(); index++)
+        {
+            System.out.println(cars.get(index));
+        }
+        */
+    }
+}
