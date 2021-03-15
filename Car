@@ -1,0 +1,26 @@
+package com.company;
+
+import javax.xml.crypto.Data;
+import java.util.Date;
+import java.time.LocalDateTime;
+
+public class Car implements Comparable<Car> {
+    protected String Id;
+    protected String Brand;
+    protected String Model;
+    protected String Color;
+    protected Integer Seats;
+
+    public Car(String id, String brand, String model, String color, Integer seats) {
+        Id = id;
+        Brand = brand;
+        Model = model;
+        Color = color;
+        Seats = seats;
+    }
+
+    @Override
+    public int compareTo(Car o) {
+        return 0;
+    }
+}
